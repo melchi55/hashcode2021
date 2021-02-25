@@ -80,9 +80,6 @@ def make_oder_3_people():
                 break
             else:
                 pass
-                
-
-
 
 
 def make_oder_4_people():
@@ -90,14 +87,15 @@ def make_oder_4_people():
 
 
 def main():
-    for x in range(selected_3_person_team_num):
+    for x in range(selected_4_person_team_num):
+        make_oder_4_people()
+    for y in range(selected_3_person_team_num):
         make_oder_3_people()
-    print(oder_3)
-
-
-
-
+    for z in range(selected_2_person_team_num):
+        make_oder_2_people()
 
 
 if __name__ == '__main__':
     main()
+
+file.close()
